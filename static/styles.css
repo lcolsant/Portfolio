@@ -66,9 +66,15 @@
     display: inline;
 }
 
+#projects {
+    color: gray;
+}
+
 .card {
     display: inline-block;
     margin-bottom: 10px;
+    width: 20rem;
+    /* margin-left: 10px; */
     /* width: 250px; */
     /* margin: 0 auto; */
     /* border: 2px red dotted; */
