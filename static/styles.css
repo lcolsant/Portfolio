@@ -3,6 +3,11 @@
     padding:0;
 }
 
+body{
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 .container-fluid {
     margin: 0 auto;
@@ -53,7 +58,7 @@
     display: inline;
 }
 
-.projects {
+#projects {
     color: gray;
     display: block;
     font-size: 30px;
@@ -81,14 +86,24 @@
 }
 
 .card-body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-  }
+    justify-content: center; */
 
-  /* .btn {
+    /* margin: 10px auto; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-top: 1px solid gray;
+    /* max-width: 320px; */
+}
+
+  .btn {
       width: 125px;
-      display: inline;
-  } */
+      margin: 5px;
+      /* display: inline-block; */
+  }
   
 
 
