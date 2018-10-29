@@ -8,24 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <link rel="stylesheet" href="../static/styles.css">
-    <title>LC Portfolio</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <title>Lee C. Colsant | Software Developer</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">LC</a>
+    <div id="top"></div>
+    <nav class="navbar navbar-expand-lg fixed-top  navbar-light ">
+        <a class="navbar" href="#">Lee C. Colsant | Software Developer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#projectanchor">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -40,8 +45,9 @@
             </div>
             <div class="main-bottom">
                 <div id="projects">
-                    <p>Current Projects</p>
+                    <h4>Currrent Projects</h4>
                 </div>
+                <div id="projectanchor"></div>
                 <div class="row justify-content-center">
 
                     <div class="card-deck">
@@ -84,6 +90,44 @@
                  </div>
             </div>
         </div>
+        <div id="about">
+            <!-- <div class="about-left col-4">
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa at neque luctus auctor pellentesque nec nunc. Sed eget nisi at nisl tristique tempor. Nam rhoncus elementum magna, eget egestas libero malesuada sed. Sed quis posuere justo, ut gravida libero. In ut accumsan urna. Aliquam tristique nunc at orci tincidunt hendrerit. Suspendisse pharetra accumsan nulla a ullamcorper. Suspendisse potenti. Sed volutpat nunc eu felis aliquet vestibulum. Integer egestas hendrerit metus, imperdiet viverra nisi euismod non. Sed molestie tempor faucibus. Vestibulum nec diam laoreet velit vestibulum gravida ac vel nisl. Curabitur faucibus blandit mauris vitae euismod. Sed turpis purus, fermentum ut metus nec, sagittis mattis turpis. Praesent eleifend odio sed erat sagittis, eget pulvinar velit auctor.
+    
+    
+                </p>
+            </div>
+            <div class="about-right col-6">
+                <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa at neque luctus auctor pellentesque nec nunc. Sed eget nisi at nisl tristique tempor. Nam rhoncus elementum magna, eget egestas libero malesuada sed. Sed quis posuere justo, ut gravida libero. In ut accumsan urna. Aliquam tristique nunc at orci tincidunt hendrerit. Suspendisse pharetra accumsan nulla a ullamcorper. Suspendisse potenti. Sed volutpat nunc eu felis aliquet vestibulum. Integer egestas hendrerit metus, imperdiet viverra nisi euismod non. Sed molestie tempor faucibus. Vestibulum nec diam laoreet velit vestibulum gravida ac vel nisl. Curabitur faucibus blandit mauris vitae euismod. Sed turpis purus, fermentum ut metus nec, sagittis mattis turpis. Praesent eleifend odio sed erat sagittis, eget pulvinar velit auctor.
+    
+    
+                </p>
+            </div> -->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            <h4>About Me</h4>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-12">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id massa at neque luctus auctor pellentesque nec nunc. Sed eget nisi at nisl tristique tempor. Nam rhoncus elementum magna, eget egestas libero malesuada sed. Sed quis posuere justo, ut gravida libero. In ut accumsan urna. Aliquam tristique nunc at orci tincidunt hendrerit. Suspendisse pharetra accumsan nulla a ullamcorper. 
+                    </div>
+                    <div class="col-sm-3 col-12">
+                    2 of 3
+                    </div>
+                    <div class="col-sm-3 col-12">
+                    2 of 3
+                    </div>
+                </div>
+            </div>
+  
+        </div>
     </div>
     <footer>
         <div class="icons">
@@ -93,6 +137,19 @@
         <p> Designed by Lee Colsant | @ 2018 </p>
     </footer>
 
+    <!--smmooth scroll script-->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });       
+    </script>
+    
     <!-- <div id="magic"></div> -->
     <script>
         var words = ["Hello, my name is Lee", "I love to code.", "I enjoy building things.", "I am a software developer.", "My latest projects are below."],
