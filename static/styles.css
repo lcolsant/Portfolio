@@ -8,9 +8,29 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+
 .navbar {
+    /* background-color: #f0f3f9; */
+    background-color: #ffffff;
+    opacity: 0.85;
     color: gray;
-    opacity: 30%; 
+
+}
+
+.navbar-toggler {
+    margin-top: 5px;
+}
+
+.nav-link {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+a.navbar{
+    font-size: 13px;
+    text-decoration: none;
+    color: gray;
+   
 }
 
 
@@ -25,19 +45,23 @@ body{
 
 .main {
     width: 100%;
+    margin: 0 auto;
     
 
 }
 
 .main-top {
     width: 100%;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 55px;
+    margin-top: 95px;
+    height: 340px;
     
 }
 
 .main-bottom {
     width: 100%;
+    margin: 0 auto;
     background-color: #f0f3f9;
     display: inline-block;
     padding: 20px;
@@ -46,17 +70,14 @@ body{
 }
 
 #console {
-    /* background-color: black; */
-    /* background-color: #3d83e5; */
     background-color: #3c75e5;
     color: greenyellow;
-    font-size: 16px;
+    font-size: 20px;
     font-family: monospace;
-    width: 82%;
-    height: 50px;
+    width: 100%;
+    height: 135px;
     margin: 0 auto;
     padding: 5px;
-    border-radius: 5px;
     text-align: left;
 }
 
@@ -83,6 +104,7 @@ body{
 
 .fa {
     color: gray;
+    padding: .5rem 0.5rem;
 }
 
 .fa:hover {
@@ -92,65 +114,59 @@ body{
 }
 
 .card-body {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
 
-    /* margin: 10px auto; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     border-top: 1px solid gray;
-    /* max-width: 320px; */
 }
 
   .btn {
       width: 125px;
       margin: 5px;
-      /* display: inline-block; */
+
   }
 
-.navbar {
-    background-color: #f0f3f9;
-    opacity: 0.85;
 
-}
 
   #about{
-      /* height: 400px; */
-      padding: 30px;
-      /* display: inline-block; */
-      margin: 0 auto;
-      /* text-align: center; */
       color: gray; 
+      background-image: url('./aboutMe.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
 
   }
 
-  /* .about-left {
-      width: 40%;
-      border: 1px dotted red;
-      display: inline-block;
-      text-align: left;
-      margin-left: 10px;
+
+
+  @media screen and (max-width:576px) {
+    #about {
+        /* display: none; */
+        background-image: none;
+    }
   }
-  
-  .about-right {
-    width: 40%;
-    border: 1px dotted red;
-    display: inline-block;
-    text-align: left;
-    margin-left: 10px;
 
+  .glass {
+    background-color: #616177;
+    opacity: 0.90;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    margin-top: 1px;
+    
+    
+  }
 
-  } */
-  
+  .about-left {
+      padding: 15px;
+  }
 
 
 footer {
-    /* border: 1px solid green; */
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     color: gray;
     font-size: 12px;
