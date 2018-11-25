@@ -163,6 +163,12 @@ a.navbar{
       padding: 15px;
   }
 
+  .technology-row {
+      padding: 15px;
+      color: gray;
+      
+  }
+
 
 footer {
     width: 100%;
@@ -173,6 +179,18 @@ footer {
     background-color: #f0f3f9;
     
 
+}
+
+ul {
+    list-style-type: none;
+}
+
+.tech-icon {
+    font-size: 60px;
+}
+
+#tech-headers {
+    font-size: 20px;
 }
 
 p{
