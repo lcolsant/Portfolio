@@ -145,6 +145,10 @@ a.navbar{
         /* display: none; */
         background-image: none;
     }
+
+    #skillset {
+        display: none;
+    }
   }
 
   .glass {
@@ -164,7 +168,10 @@ a.navbar{
   }
 
   .technology-row {
-      padding: 15px;
+      padding-top: 15px;
+      padding-left: 30px;
+      padding-right: 15px;
+      padding-bottom: 15px;
       color: gray;
       
   }
@@ -186,11 +193,17 @@ ul {
 }
 
 .tech-icon {
-    font-size: 60px;
+    font-size: 55px;
 }
 
 #tech-headers {
     font-size: 20px;
+}
+
+.skills {
+    display: inline-block;
+    padding: 10px;
+    vertical-align: top;
 }
 
 p{
