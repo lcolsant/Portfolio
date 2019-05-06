@@ -97,8 +97,9 @@ a.navbar{
 .card {
     display: inline-block;
     margin-bottom: 10px;
-    width: 100%;
+    /* width: 18rem; */
     height: 100%;
+   
 }
 
 .thumbs {
@@ -128,6 +129,15 @@ a.navbar{
     border-top: 1px solid gray;
 }
 
+
+/* @media only screen and (min-width:576px) {
+
+    .card-img-top {
+        width: 100%;
+        height: 18vw;
+        object-fit: cover;
+    }
+}  */
 
 
   .btn {
