@@ -138,6 +138,7 @@ a.navbar{
         height: 24vw;
         object-fit: cover;
     }
+
 } 
 
 @media only screen and (min-width:992px) {
@@ -147,6 +148,7 @@ a.navbar{
         height: 18vw;
         object-fit: cover;
     }
+    
 } 
 
 
